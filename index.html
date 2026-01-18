@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>cpssculptures</title>
+
+  <meta name="description" content="cpssculptures — sculpture, drawings, photos and media works. Featuring cpssculptures and Good Boy Media.">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #e5e5e5;
+    }
+
+    header {
+      background: #202124;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    header img {
+      max-width: 90px;
+      height: auto;
+      margin-left: 2.4rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3.1rem;
+    }
+
+    .page-wrapper {
+      width: 100%;
+      padding: 2rem 0;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin: 0 auto;
+      max-width: calc(725px * 2 + 2rem);
+      padding: 0 1rem;
+      box-sizing: border-box;
+    }
+
+    .column {
+      background: #f1f3f4;
+      padding: 1rem;
+      border-radius: 8px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .column h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .post {
+      background: #f0f0f0;
+      border: 1px solid #ddd;
+      padding: 2mm;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+      width: 100%;
+      height: 180px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .thumbnail-box {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border: 1px solid #ccc;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 2mm;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .thumbnail-box img {
+      height: 100%;
+      width: auto;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      margin-right: 10px;
+    }
+
+    .thumbnail-text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .thumbnail-text h3 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: normal;
+    }
+
+    .thumbnail-text h2 {
+      margin: 5px 0 0 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .post {
+        height: auto;
+        min-height: 180px;
+      }
+
+      .thumbnail-box {
+        flex-direction: column;
+        padding: 1rem;
+      }
+
+      .thumbnail-box img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 10px 0;
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+      color: black;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>cpssculptures.com</h1>
+    <img src="images/bounce.jpg" alt="cpssculptures.com logo" />
+  </header>
+
+  <div class="page-wrapper">
+    <div class="container">
+
+      <!-- LEFT COLUMN -->
+      <div class="column">
+        <h1>cpssculptures</h1>
+
+        <p style="font-size:0.9rem; color:#555; text-align:center;">
+          Sculptural practice and archival works from cpssculptures.
+        </p>
+
+        <!-- CV BOX -->
+        <article class="post">
+          <a href="cv.html"
+             class="thumbnail-box"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img src="images/edward_2021.jpg" alt="Edward 2021 sculpture thumbnail" />
+            <div class="thumbnail-text">
+              <h3>cpssculptures</h3>
+              <h2>Curriculum Vitae</h2>
+            </div>
+          </a>
+        </article>
+
+        <!-- LODESTONE BOX -->
+        <article class="post">
+          <a href="loadstone-drawings.html"
+             class="thumbnail-box"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img src="images/lodestone_thumbnail.jpg" alt="Lodestone Drawings 2010 thumbnail" />
+            <div class="thumbnail-text">
+              <h3>cpssculptures</h3>
+              <h2>Lodestone Drawings, 2010</h2>
+            </div>
+          </a>
+        </article>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="column">
+        <h1>Good Boy Media</h1>
+
+        <p style="font-size:0.9rem; color:#555; text-align:center;">
+          Media notes and posts from Good Boy Media.
+        </p>
+
+        <article class="post">
+          <h2>First Media Post</h2>
+        </article>
+
+        <article class="post">
+          <h2>Second Media Post</h2>
+        </article>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      © 2025 cpssculptures. All rights reserved. –
+      Contact and Resources –
+      <a href="https://geno.link/cpssculptures"
+         style="color:black; text-decoration:none;"
+         target="_blank"
+         rel="noopener noreferrer">
+        Geno.Link/cpssculptures
+      </a>
+    </p>
+  </footer>
+
+</body>
+</html>
