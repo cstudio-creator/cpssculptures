@@ -43,13 +43,11 @@
 .image-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 24px;        /* your desired vertical spacing */
-  column-gap: 0.25rem;  /* horizontal spacing unchanged */
+  row-gap: 24px;
+  column-gap: 0.25rem;
   justify-items: center;
-  align-items: start;   /* ← this is the key */
-  margin-top: 113px;    /* ≈ 30mm drop */
-}
-
+  align-items: start;
+  margin-top: 113px;
 }
 
 /* Remove browser default spacing */
@@ -61,8 +59,8 @@
 /* Force consistent image height so vertical spacing actually works */
 .image-grid img {
   width: 80%;
-  height: 300px;       /* consistent height = consistent row spacing */
-  object-fit: contain; /* keeps full drawing visible */
+  height: 300px;
+  object-fit: contain;
   display: block;
   margin: 0;
   padding: 0;
@@ -75,5 +73,3 @@
   }
 }
 </style>
-
-
