@@ -1,0 +1,8 @@
+# Allow all crawlers full access
+User-agent: *
+Allow: /
+
+# Optional: content signals (informational only)
+# search: allowed
+# ai-input: allowed
+# ai-train: allowed
