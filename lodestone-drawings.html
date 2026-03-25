@@ -5,87 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>lodestone drawings, 2010</title>
   <link rel="icon" type="image/png" href="favicon.jpg">
-  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #e5e5e5;
+      font-family: Arial, sans-serif;
+    }
+
+    .wrapper {
+      max-width: 750px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      font-weight: normal;
+    }
+
+    p.description {
+      font-size: 1.15rem;
+      max-width: 600px;
+      margin: 2rem auto 3rem auto;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    .image-column {
+      display: flex;
+      flex-direction: column;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .image-column figure {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .image-column img {
+      width: 78%;
+      height: auto;
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      padding-bottom: 2rem;
+      font-size: 0.9rem;
+      color: #333;
+    }
+  </style>
 </head>
+
 <body>
 
-<section class="project-box" id="lodestone-drawings-2010">
-  <h2>lodestone drawings, 2010</h2>
+  <div class="wrapper">
+    <h1>lodestone drawings, 2010</h1>
 
-  <p>
-    Collecting of drawings done on a computer and paper. They encapsulate the idea of these sculpture drawings being a kind of lodestone on the metaphysical journey of life.
-  </p>
+    <p class="description">
+      Collecting of drawings done on a computer and paper. They encapsulate the idea of these sculpture drawings being a kind of lodestone on the metaphysical journey of life.
+    </p>
 
-  <div class="image-grid">
-    <figure><img src="images/lodestone-01.jpg" alt="loadstone drawing 1"></figure>
-    <figure><img src="images/lodestone-02.jpg" alt="loadstone drawing 2"></figure>
-    <figure><img src="images/lodestone-03.jpg" alt="loadstone drawing 3"></figure>
-    <figure><img src="images/lodestone-04.jpg" alt="loadstone drawing 4"></figure>
-    <figure><img src="images/lodestone-05.jpg" alt="loadstone drawing 5"></figure>
-    <figure><img src="images/lodestone-06a.jpg" alt="loadstone drawing 6"></figure>
+    <div class="image-column">
+      <figure><img src="images/lodestone-01.jpg" alt="lodestone drawing 1"></figure>
+      <figure><img src="images/lodestone-02.jpg" alt="lodestone drawing 2"></figure>
+      <figure><img src="images/lodestone-03.jpg" alt="lodestone drawing 3"></figure>
+      <figure><img src="images/lodestone-04.jpg" alt="lodestone drawing 4"></figure>
+      <figure><img src="images/lodestone-05.jpg" alt="lodestone drawing 5"></figure>
+      <figure><img src="images/lodestone-06a.jpg" alt="lodestone drawing 6"></figure>
+    </div>
+
   </div>
-</section>
 
-<style>
-/* Reduce the large top gap but keep breathing room */
-.project-box {
-  margin-top: 80px;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-/* Heading text ~15% bigger */
-.project-box h2 {
-  font-size: 2.3rem;
-  margin-bottom: 1.2rem;
-}
-
-/* Lower text block: 33% smaller + extra spacing above and below */
-.project-box p {
-  font-size: 1.2rem;
-  margin-top: 40px;
-  margin-bottom: 55px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Image grid: drop down ~30mm + correct vertical spacing */
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 24px;
-  column-gap: 0.25rem;
-  justify-items: center;
-  align-items: start;
-  margin-top: 113px;
-}
-
-/* Remove browser default spacing */
-.image-grid figure {
-  margin: 0;
-  padding: 0;
-}
-
-/* Force consistent image height so vertical spacing actually works */
-.image-grid img {
-  width: 80%;
-  height: 300px;
-  object-fit: contain;
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-/* Mobile: one column */
-@media (max-width: 600px) {
-  .image-grid {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
 </body>
 </html>
-
-
-
