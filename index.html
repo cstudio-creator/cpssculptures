@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>cpssculptures</title>
 
-  <meta name="description" content="cpssculptures — sculpture, drawings, photos and media works. Featuring cpssculptures and Good Boy Media.">
+  <meta name="description" content="cpssculptures — sculpture, drawings, photos and media works. Featuring cpssculptures.">
 
   <style>
     body {
@@ -39,15 +39,16 @@
       padding: 2rem 0;
     }
 
+    /* DESKTOP: two columns */
     .container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      margin: 0 auto;
-      max-width: calc(725px * 2 + 2rem);
-      padding: 0 1rem;
-      box-sizing: border-box;
-    }
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 725px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
 
     .column {
       background: #f1f3f4;
@@ -120,6 +121,7 @@
       font-weight: bold;
     }
 
+    /* MOBILE: stack columns vertically */
     @media (max-width: 768px) {
       .container {
         grid-template-columns: 1fr;
@@ -177,7 +179,7 @@
              class="thumbnail-box"
              target="_blank"
              rel="noopener noreferrer">
-            <img src="images/edward_2021.jpg" alt="Edward 2021 sculpture thumbnail" />
+            <img src="images/cv-thumbnail.jpg" alt="Edward 2021 sculpture thumbnail" />
             <div class="thumbnail-text">
               <h3>cpssculptures</h3>
               <h2>Curriculum Vitae</h2>
@@ -185,58 +187,72 @@
           </a>
         </article>
 
-       <!-- LODESTONE BOX -->
-<article class="post">
-  <a href="lodestone-drawings.html"
-     class="thumbnail-box"
-     target="_blank"
-     rel="noopener noreferrer">
-    <img src="images/lodestone_thumbnail.jpg" alt="Lodestone Drawings 2010 thumbnail" />
-    <div class="thumbnail-text">
-      <h3>cpssculptures</h3>
-      <h2>Lodestone Drawings, 2010</h2>
-    </div>
-  </a>
-</article>
-
-
-      </div>
-
-      <!-- RIGHT COLUMN -->
-      <div class="column">
-        <h1>Good Boy Media</h1>
-
-        <p style="font-size:0.9rem; color:#555; text-align:center;">
-          Media notes and posts from Good Boy Media.
-        </p>
-
+        <!-- LODESTONE BOX -->
         <article class="post">
- <a href="found-objects-conceptual-art.html"
+          <a href="lodestone-drawings.html"
+             class="thumbnail-box"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img src="images/lodestone_thumbnail.jpg" alt="Lodestone Drawings 2010 thumbnail" />
+            <div class="thumbnail-text">
+              <h3>cpssculptures</h3>
+              <h2>Lodestone Drawings, 2010</h2>
+            </div>
+          </a>
+        </article>
 
 
-     class="thumbnail-box"
-     target="_blank"
-     rel="noopener noreferrer">
-    <div class="thumbnail-text">
-      <h3>Good Boy Media</h3>
-      <h2>Found Objects, Conceptual Art</h2>
-    </div>
-  </a>
-</article>
-
-
+        <!-- PLASTER – DITHER 0.1 BOX -->
         <article class="post">
-          <h2>Second Media Post</h2>
+          <a href="plaster.html"
+             class="thumbnail-box"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img src="images/dither-thumbnail.jpg" alt="Plaster Works thumbnail" />
+            <div class="thumbnail-text">
+              <h3>cpssculptures</h3>
+              <h2>Plaster Works </h2>
+            </div>
+          </a>
+        </article>
+
+        <!-- FOUND OBJECTS – DITHER 0.1 BOX -->
+        <article class="post">
+          <a href="found-objects.html"
+             class="thumbnail-box"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img src="images/dither-thumbnail.jpg" alt="Found Objects thumbnail" />
+            <div class="thumbnail-text">
+              <h3>cpssculptures</h3>
+              <h2>Found Objects</h2>
+            </div>
+          </a>
+        </article>
+
+        <!-- ABSTRACT SCULPTURES – DITHER 0.1 BOX -->
+        <article class="post">
+          <a href="abstract-sculptures.html"
+             class="thumbnail-box"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img src="images/dither-thumbnail.jpg" alt="Abstract Sculptures thumbnail" />
+            <div class="thumbnail-text">
+              <h3>cpssculptures</h3>
+              <h2>Abstract Sculptures</h2>
+            </div>
+          </a>
         </article>
 
       </div>
 
-    </div>
+      <!-- RIGHT COLUMN -->
+   
   </div>
 
   <footer>
     <p>
-      © 2025 cpssculptures. All rights reserved. –
+
       Contact – cps1111@hotmail.com – Resources –
       <a href="https://geno.link/cpssculptures"
          style="color:black; text-decoration:none;"
@@ -249,8 +265,3 @@
 
 </body>
 </html>
-
-
-
-
-
