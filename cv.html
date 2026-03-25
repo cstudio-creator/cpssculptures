@@ -16,9 +16,11 @@
     }
 
     .container {
-      max-width: 600px;
+      max-width: 648px;
+
       margin: 5rem auto;
-      padding: 2rem;
+      padding: 2rem 2rem 2rem 2.5rem;
+
       border: 2px solid #444;
       background: #f9fbfc;
       border-radius: 8px;
@@ -71,7 +73,16 @@
       text-align: left;
     }
 
-    /* ✅ MOBILE-FRIENDLY ADJUSTMENTS */
+    /* ✅ ALIGNMENT FIX FOR 2026 DITHER 0.1 */
+    .entry-title {
+      margin: 1rem 0;
+      padding-left: 4rem;
+      text-indent: -2rem;
+      line-height: 1.4;
+      text-align: left;
+    }
+
+    /* MOBILE */
     @media (max-width: 600px) {
 
       .container {
@@ -87,13 +98,13 @@
         font-size: 1.1rem;
       }
 
-      /* Birth date line recenters on mobile */
       .headline p {
         left: 0;
         margin-top: 0.5rem;
       }
 
-      .entry {
+      .entry,
+      .entry-title {
         padding-left: 2rem;
         text-indent: -1rem;
       }
@@ -116,6 +127,9 @@
     <div class="entry">1988 Bachelor of Arts Visual – Sculpture<br>Canberra School of Art.</div>
 
     <h2 class="section-title">Individual Exhibitions</h2>
+
+
+
     <div class="entry">1995 "revision"<br>Exhibition of work.<br>ANCA Gallery, Dickson ACT.</div>
     <div class="entry">1993 "Sculpture"<br>Ben Grady Gallery<br>Kingston ACT.</div>
     <div class="entry">1991 "Line Form Colour"<br>Ben Grady Gallery<br>Kingston ACT.</div>
@@ -123,11 +137,6 @@
     <h2 class="section-title">Collections</h2>
     <div class="entry">1992 National Gallery of Australia</div>
     <div class="entry">1991 Goethe Institute, Canberra</div>
-
-    <h2 class="section-title">Commissions</h2>
-    <div class="entry">1992 Conceptual Art, "Aspirations Licentious", unfinished.<br> Information Sciences and Engineering building,<br>University of Canberra.
-</div>
-    
 
 
 
@@ -139,7 +148,3 @@
   </div>
 </body>
 </html>
-
-
-
-
